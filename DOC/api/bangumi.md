@@ -197,6 +197,8 @@
 ```javascript
 (TODO)
 ```
+* note:
+  * user(staff or above) session required.
 
 #### Update bangumi data
 * path: `/api/bangumi/update`
@@ -209,6 +211,8 @@
 ```javascript
 (TODO)
 ```
+* note:
+  * user(staff or above) session required.
 
 #### Remove bangumi data
 * path: `/api/bangumi/remove`
@@ -221,6 +225,8 @@
 ```javascript
 (TODO)
 ```
+* note:
+  * user(staff or above) session required.
 
 #### Search bangumi data
 * path: `/api/bangumi/search`
