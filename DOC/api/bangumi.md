@@ -209,3 +209,106 @@
 ```javascript
 (TODO)
 ```
+
+#### Remove bangumi data
+* path: `/api/bangumi/remove`
+* method: `POST`
+* post:
+```javascript
+(TODO)
+```
+* return:
+```javascript
+(TODO)
+```
+
+#### Search bangumi data
+* path: `/api/bangumi/search`
+* method: `POST`
+* post
+```javascript
+{
+	"name": "結城友奈は勇者である"
+}
+```
+* return:
+```javascript
+{
+  "success": true,
+  "found": true,
+  "bangumi": {
+    "_id": "548f047ff892774b140ac653",
+    "cover": "data/images/2014/12/7oco5rpb1ubcvmg8lbh.jpg",
+    "credit": "Studio五組",
+    "endDate": 1419529800000,
+    "icon": "data/images/2014/12/7ige8c9xyl2qvtby6f6.jpg",
+    "name": "結城友奈は勇者である",
+    "showOn": 5,
+    "startDate": 1413480000000,
+    "tag_id": "548f047ff892774b140ac650"
+  }
+}
+```
+* note:
+  * `name` must be exactly the same, case insesitive.
+
+#### Fetch bangumi data
+* path: `/api/bangumi/fetch`
+* method: `POST`
+* post/type-object:
+```javascript
+{
+	"_id": "548f047ff892774b140ac653"
+}
+```
+return/type-object:
+```javascript
+{
+  "_id": "548f047ff892774b140ac653",
+  "cover": "data/images/2014/12/7oco5rpb1ubcvmg8lbh.jpg",
+  "credit": "Studio五組",
+  "endDate": 1419529800000,
+  "icon": "data/images/2014/12/7ige8c9xyl2qvtby6f6.jpg",
+  "name": "結城友奈は勇者である",
+  "showOn": 5,
+  "startDate": 1413480000000,
+  "tag_id": "548f047ff892774b140ac650"
+}
+```
+* post/type-array:
+```javascript
+{
+	"_ids": [
+		"548f024df892774b140ac633",
+		"548f047ff892774b140ac653"
+	]
+}
+```
+* return/type-array:
+```javascript
+[
+  {
+    "_id": "548f024df892774b140ac633",
+    "cover": "data/images/2014/12/5amux6k3yt6qr98v29f.jpg",
+    "credit": "京都アニメーション",
+    "endDate": 1419526200000,
+    "icon": "data/images/2014/12/4wwbso2q8tybiw0lbd2.jpg",
+    "name": "甘城ブリリアントパーク",
+    "showOn": 5,
+    "startDate": 1412612400000,
+    "tag_id": "548f024df892774b140ac630"
+  },
+  {
+    "_id": "548f047ff892774b140ac653",
+    "cover": "data/images/2014/12/7oco5rpb1ubcvmg8lbh.jpg",
+    "credit": "Studio五組",
+    "endDate": 1419529800000,
+    "icon": "data/images/2014/12/7ige8c9xyl2qvtby6f6.jpg",
+    "name": "結城友奈は勇者である",
+    "showOn": 5,
+    "startDate": 1413480000000,
+    "tag_id": "548f047ff892774b140ac650"
+  }
+]
+```
+
