@@ -798,6 +798,8 @@
   }
 ]
 ```
+* note:
+  * `query` mostly to be a title.
 
 #### Fetch tag data
 * path: `/api/tag/fetch`
