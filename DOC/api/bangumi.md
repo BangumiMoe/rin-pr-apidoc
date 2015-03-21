@@ -261,7 +261,7 @@
 	"_id": "548f047ff892774b140ac653"
 }
 ```
-return/type-object:
+* return/type-object:
 ```javascript
 {
   "_id": "548f047ff892774b140ac653",
