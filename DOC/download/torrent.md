@@ -1,4 +1,4 @@
-### Download
+### Torrent Download
 
 #### Download torrent file
 * path: `/download/torrent/:tid/:filename`
