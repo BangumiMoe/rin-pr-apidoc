@@ -50,10 +50,34 @@
 * post:
 ```javascript
 {
-	tag_id: <string>|<Array>
+	tag_id: <string>|<Array>,
+  p: <number (optional)>
 }
 ```
-* return:
+* return (with count & page_count only when page is 1):
 ```javascript
-(TODO)
+{
+  "count": <number>,
+  "page_count": <number>,
+  "torrents": <Array>
+}
+```
+
+#### Search torrent by title
+* path: `/api/torrent/search/title`
+* methid: `POST`
+* post:
+```javascript
+{
+  title: <string>,
+  p: <number (optional)>
+}
+```
+* return (with count & page_count only when page is 1):
+```javascript
+{
+  "count": <number>,
+  "page_count": <number>,
+  "torrents": <Array>
+}
 ```
