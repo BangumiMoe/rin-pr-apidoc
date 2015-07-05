@@ -10,10 +10,10 @@
 * method: `GET`
 * return: <RSS Object>
 * notes:
-  * `tag_ids` can be one tag id or many tag ids concatenate with `+`. E.g., `/rss/tags/550fd9df1fe5c31a190a068d` or `/rss/tags/550fd9df1fe5c31a190a068d+548edfb54ab7379536f56351`.
+  * `tag_ids` can be one tag id or many tag ids concatenate with `+`. E.g., `/rss/tags/550fd9df1fe5c31a190a068d` or `/rss/tags/550fd9df1fe5c31a190a068d+548edfb54ab7379536f56351`. If multiple tag ids applied, search results will match all the tags.
 
 #### Get user RSS feed
-* path: `/rss/user/user_id`
+* path: `/rss/user/<user_id>`
 * method: `GET`
 * return <RSS Object>
 * notes:
