@@ -1,17 +1,6 @@
 ### Torrent API
 
-#### Get latest torrents
-* path: `/api/torrent/latest`
-* method: `GET`
-* return:
-```javascript
-{
-	"page_count": <number>,
-	"torrents": <Array>
-}
-```
-
-#### Get specified torrent page
+#### Get torrent page per page
 * path: `/api/torrent/page/:pagenum`
 * method: `GET`
 * params:
@@ -19,6 +8,7 @@
 * return:
 ```javascript
 {
+	page_count: 100,
 	"torrent": <Array>
 }
 ```
