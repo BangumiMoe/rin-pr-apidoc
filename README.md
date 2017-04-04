@@ -7,7 +7,7 @@ API Document for Rin-pr
 
 These api are more convenient than the api mentioned below.
 
-[https://github.com/BangumiMoe/rin-webui/wiki/DEV](https://github.com/BangumiMoe/rin-webui/wiki/DEV)
+[https://github.com/BangumiMoe/rin-webui/wiki/DEV#api](https://github.com/BangumiMoe/rin-webui/wiki/DEV#api)
 
 #### API
 
