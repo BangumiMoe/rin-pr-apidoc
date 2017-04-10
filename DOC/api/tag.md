@@ -628,8 +628,10 @@
 * path: `/api/tag/search`
 * method: `POST`
 * post:
+  - `name`:
+    * `keywords=false`, it should exactly the same in synonyms, case insensitive.
+    * `keywords=true`, it should match part of tag's synonyms, case insensitive.
   - `type`: Get the specified type of tag(s). If not set, it will return all kind of tags.
-  - `keywords`: Search tag(s) by matching part of tag's name.
   - `multi`: Return the collection of tags or not.
 ```javascript
 {
@@ -674,7 +676,7 @@
   ]
 }
 ```
-or (multi=false):
+or (`multi=false`):
 ```javascript
 {
   "success": true,
@@ -714,8 +716,6 @@ or (not found):
   "found": false
 }
 ```
-* note:
-  * name should exactly the same in synonyms, case insensitive.
 
 #### Get tag suggestions
 * path: `/api/tag/suggest`
