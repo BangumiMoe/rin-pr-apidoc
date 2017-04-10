@@ -631,10 +631,16 @@
 ```javascript
 {
 	"name": "akame ga kill",
+  "type"?: "bangumi",
 	"keywords": true,
 	"multi": true
 }
 ```
+
+  - `type`: Get the specified type of tag(s). If not set, it will return all kind of tags.
+  - `keywords`: Search tag(s) by matching part of tag's name.
+  - `multi`: Return the collection of tags or not.
+
 * return:
 ```javascript
 {
@@ -668,6 +674,46 @@
       "type": "bangumi"
     }
   ]
+}
+```
+or (multi=false):
+```javascript
+{
+  "success": true,
+  "found": true,
+  "tag": {
+    "_id": "548f0004f892774b140ac618",
+    "activity": 0,
+    "locale": {
+      "ja": "アカメが斬る!",
+      "zh_cn": "斩·赤红之瞳！",
+      "en": "Akame Ga Kill",
+      "zh_tw": "斬！赤紅之瞳"
+    },
+    "name": "アカメが斬る!",
+    "syn_lowercase": [
+      "アカメが斬る!",
+      "斩·赤红之瞳！",
+      "akame ga kill",
+      "akame ga kiru",
+      "斬！赤紅之瞳"
+    ],
+    "synonyms": [
+      "アカメが斬る!",
+      "斩·赤红之瞳！",
+      "Akame Ga Kill",
+      "Akame Ga Kiru",
+      "斬！赤紅之瞳"
+    ],
+    "type": "bangumi"
+  }
+}
+```
+or (not found):
+```javascript
+{
+  "success": true,
+  "found": false
 }
 ```
 * note:
