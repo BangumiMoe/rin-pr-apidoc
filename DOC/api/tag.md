@@ -628,19 +628,17 @@
 * path: `/api/tag/search`
 * method: `POST`
 * post:
-```javascript
-{
-	"name": "akame ga kill",
-  "type"?: "bangumi",
-	"keywords": true,
-	"multi": true
-}
-```
-
   - `type`: Get the specified type of tag(s). If not set, it will return all kind of tags.
   - `keywords`: Search tag(s) by matching part of tag's name.
   - `multi`: Return the collection of tags or not.
-
+```javascript
+{
+  "name": "akame ga kill",
+  "type"?: "bangumi",
+  "keywords": true,
+  "multi": true
+}
+```
 * return:
 ```javascript
 {
@@ -725,7 +723,7 @@ or (not found):
 * post:
 ```javascript
 {
-	"query": "【DHR動研字幕組】[不起眼女主角培育法 / 路人女主的養成方法_Saenai Hiroin no Sodatekata / Saekano][10][繁體][720P][MP4]"
+  "query": "【DHR動研字幕組】[不起眼女主角培育法 / 路人女主的養成方法_Saenai Hiroin no Sodatekata / Saekano][10][繁體][720P][MP4]"
 }
 ```
 * return:
@@ -856,7 +854,7 @@ or (not found):
 * post/type-object:
 ```javascript
 {
-	"_id": "548f0434f892774b140ac64c"
+  "_id": "548f0434f892774b140ac64c"
 }
 ```
 * return/type-object:
@@ -893,10 +891,10 @@ or (not found):
 * post/type-array:
 ```javascript
 {
-	"_ids": [
-		"548f0434f892774b140ac64c",
-		"54900139ab830e195bf7cb40"
-	]
+  "_ids": [
+    "548f0434f892774b140ac64c",
+    "54900139ab830e195bf7cb40"
+  ]
 }
 ```
 * return/type-array:
